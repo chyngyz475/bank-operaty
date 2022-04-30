@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="modal-box" class="modal-box"  style="display: none">
+
+    <div class="modal-box-content">
+        <button id="show2">Закрыть</button>
+        <i class="fas fa-rocket"></i>
+        <p class="modal-p">Хотите перезвоним вам за 28 секунд?</p>
+        <form action="">
+            <input id="telNumber" type="tel"  minlength="13" maxlength="13" placeholder="+999">
+            <a id="modal-btn" class="modal-btn">Жду звонка</a>
+        </form>
+        <p class="modal-p1">
+            <span  class="">00</span>
+            <span>:</span>
+            <span  class="timer-sec"></span>
+            <span>:</span>
+            <span id="timer-mSeck" class="timer-mSeck"></span>
+        </p>
+
+        <p class="modal-p-s">Letraset, французская компания литерность, популяризировал прохождение Lorem Ipsum в 1960-е годы с их сухим передаточных листов.</p>
+    </div>
+</div>
+<header class="header">
+    <div class="container">
+
+        <div class="row">
+            <div class=" col-md-4 pcbp-content">
+                <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            </div>
+            <div class=" col-md-2 pcbp-content">
+                <i class="far fa-clock fa-2x"></i>
+                <div class="pcbp-text">
+                    <p class="pcbp-text-p">ПН - ПТ(9:00 - 18:00)</p>
+                    <p class="pcbp-text-p" style="font-style: italic">CБ-ВС закрыто</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-2 pcbp-content">
+                <i class="fa fa-phone fa-2x"></i>
+                <div class="pcbp-text">
+                    <a href="tel: +996555787878">(555) 787-878</a>
+                    <a href="tel: +996555787878">(555) 787-878</a>
+                </div>
+            </div>
+
+            <div class="col-md-2 pcbp-content">
+                <i class="fa fa-phone fa-2x"></i>
+                <div class="pcbp-text">
+                    <a href="tel: +996555787878">(555) 787-878</a>
+                    <a href="tel: +996555787878">(555) 787-878</a>
+                </div>
+            </div>
+            <div class="col-md-2 pcbp-content">
+                <button id="show" class="btn zakaz">Заказать звонок</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar" id="navbar">
+                <ul class="menu">
+                    <li class="active"><a href="#">Как получить кредит</a></li>
+                    <li><a href="#">Как погасить</a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Оставить жалобу</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li>
+                        <ul class="menu2">
+                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+</header>
+
+
+<section id="about_service2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 get-fom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form class="form2" data-toggle="validator" role="form">
+                                <h3>Форма заявки</h3>
+                                <div class="form-group">
+                                    <label for="inputName" class="control-label">Фамилия</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Введите фамилию"
+                                           required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="control-label">Имя</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Введите имя"
+                                           required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nsme2" class="control-label">Отчество</label>
+                                    <input type="text" class="form-control" id="nsme2" placeholder="Введите отчество"
+                                           required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail" class="control-label">Электронная почта</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email"
+                                           data-error="Bruh, that email address is invalid" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="number" class="control-label">Мобильный телефон</label>
+                                    <input type="number" class="form-control" id="number"
+                                           placeholder="Пример: 0777 77 77 77" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="checkbox1" required>
+                                            <span> Согласие на обработку персональный данных</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="checkbox2" required>
+                                            <span> Согласие на передачу данных в кредитное бюро</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    * - ознакомиться
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Отправить</button>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="second-block2">
+                                <ul class="second-block2-ul">
+                                    <li>Вы получите</li>
+                                    <li><strong id="local_summ"></strong> сом</li>
+                                </ul>
+                                <ul class="second-block2-ul">
+                                    <li> На срок</li>
+                                    <li><strong id="local_srok"></strong> мес</li>
+                                </ul>
+                                <ul class="second-block2-ul">
+                                    <li>Сумма возврата</li>
+                                    <li><strong id="local_vozvrat"></strong> сом</li>
+                                </ul>
+                            </div>
+                            <div class="second-block3">
+                                <h3>Нужны Деньги?</h3>
+                                <p>Вы можете связаться с нами</p>
+
+                                <Ul class="contacts">
+                                    <li> <i class="fas fa-phone"></i></li>
+                                    <li>
+                                        <a href="tel:+999550505005">0550 50 50 05</a><br>
+                                        <a href="tel:+999550505005">0550 50 50 05</a>
+                                    </li>
+
+                                </Ul>
+                                <Ul class="contacts">
+                                    <li><i class="fas fa-envelope"></i></li>
+                                    <li>
+                                        <a href="mailto:info1@arysinvest">info1@arysinvest</a><br>
+                                        <a href="mailto:info1@arysinvest">info1@arysinvest</a>
+                                    </li>
+
+                                </Ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+<script >
+    let local_summ = document.getElementById("local_summ");
+    let local_srok = document.getElementById("local_srok");
+    let local_vozvrat = document.getElementById("local_vozvrat");
+
+
+    let write_local=()=>{
+        let your_credit2 = JSON.parse(localStorage.getItem("your_credit"));
+        local_summ.innerText =your_credit2.your_summa ;
+        local_srok.innerText = your_credit2.your_srok;
+        local_vozvrat.innerText = your_credit2.your_payment;
+    };
+
+    write_local()
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
